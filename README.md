@@ -1,7 +1,7 @@
 # Open-Data
-Analysis of Open Datasets
+Analysis of Open Datasets by Viggy Kumaresan
 
-Open Data Links:
+## Open Data Links:
 Cambridge Open Data Portal: https://data.cambridgema.gov/browse
 
 Cambridge Open Data Civic Challenge Inventory: https://data.cambridgema.gov/General-Government/Civic-Innovation-Challenge-Inventory/x96z-hdnh/data
@@ -10,7 +10,7 @@ Boston Open Data Portal: https://data.boston.gov/
 
 
 
-Personal Work:
+## Personal Work:
 Blog: https://datainallthings.wordpress.com/
 
 Cambridge Parking Tickets Analysis: https://datainallthings.wordpress.com/2017/10/25/cambridge-open-data-parking-ticket-analysis/
