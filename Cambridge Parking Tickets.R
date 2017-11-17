@@ -42,6 +42,29 @@ ggmap(mapcambridge) +
 # Exploratory Analysis
 table(Cambridge_Parking_Tickets$`Violation Description`)
 
+library(ggplot2)
+Cambridge_Parking_Tickets$`Violation Description` <- as.factor(Cambridge_Parking_Tickets$`Violation Description`)
+ggplot(data=Cambridge_Parking_Tickets) + geom_bar(mapping = aes(x = `Violation Description`))
+
+
+# Analysis of Squares
+harvard <- subset(Cambridge_Parking_Tickets, (long > 42.37 & long < 42.38) & (lat > -71.12 & lat < -71.11))
+View(harvard)
+table(harvard$`Violation Description`)
+
+central <- subset(Cambridge_Parking_Tickets, (long > 42.36 & long < 42.37) & (lat > -71.105 & lat < -71.104))
+table(central$`Violation Description`)
+
+porter <- subset(Cambridge_Parking_Tickets, (long > 42.38 & long < 42.39) & (lat > -71.13 & lat < -71.12))
+table(porter$`Violation Description`)
+
+kendall <- subset(Cambridge_Parking_Tickets, (long > 42.36 & long < 42.37) & (lat > -71.10 & lat < -71.09))
+table(kendall$`Violation Description`)
+
+davis <- subset(Cambridge_Parking_Tickets, (long > 42.39 & long < 42.40) & (lat > -71.13 & lat < -71.12))
+table(davis$`Violation Description`)
+
+
 
 # Write CSV files for Tableau Visualization
 write.csv(split_coords, file='/Users/Viggy/Desktop/Data Science/R/Cambridge Open Data/Cambridge_Parking_Tickets_splitcoords.csv')
